@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Courses</title>
+    <link rel="icon" href="websitelogo.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+       
+.header {
+           background-color: #5ac4ed; 
+           color: #fff;
+           padding: 15px 30px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           position: fixed;
+           width: 100%;
+           top: 0;
+           z-index: 1000;
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       }
+
+       .header .logo {
+           display: flex;
+           align-items: center;
+       }
+
+       .header .logo img {
+           width: 50px;
+           height: 50px;
+           margin-right: 15px;
+           border-radius: 50%;
+       }
+
+       .header h1 {
+           margin: 0;
+           font-size: 24px;
+           color: #fff;
+       }
+
+       .navigation {
+           display: flex;
+           align-items: center;
+       }
+
+       .header .nav {
+           list-style: none;
+           margin: 0;
+           padding: 0;
+           display: flex;
+       }
+
+       .header .nav li {
+           margin-left: 20px;
+       }
+
+       .header .nav a {
+           color: #fff;
+           font-weight: bold;
+           text-decoration: none;
+           padding: 10px 15px;
+           border-radius: 20px;
+           transition: background-color 0.3s;
+           background-color: #5ac4ed; /* Green */
+       }
+
+       .header .nav a:hover {
+           background-color: #fff; 
+           color: black;
+       }
+       .logo{
+        width: 30%;
+       }
+       .opt{
+        width: 50%;
+       }
+        
+        .course-section {
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .course-video {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .course-title {
+            margin-top: 8%;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .course-description {
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+        
+        .course-video iframe {
+            width: 100%;
+            height: 400px;
+        }
+        
+        .enroll-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .enroll-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="websitelogo.png" alt="Online Education Logo">
+            <h1>Online Education</h1>
+        </div>
+        <div class="opt">
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login_form.php">Menu</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="teachers.html">Teachers</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="course-section">
+        <div class="course-video">
+            <h2 class="course-title">Introduction to Web Development</h2>
+            <p class="course-description"><b>In this course, you will learn the fundamentals of web development, including HTML, CSS, and JavaScript and PHP. Get started on your journey to becoming a web developer today!</b></p>
+            <iframe src="https://www.youtube.com/embed/HVjjoMvutj4?start=84660" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <a class="enroll-button" href="#">Click on Video</a>
+    </div>
+
+    <div class="course-section">
+        <div class="course-video">
+            <h2 class="course-title">Introduction to java developer course</h2>
+            <p class="course-description">In this course, you will learn the fundamentals of Java, including syntax, function, class etc. Get started on your journey to becoming a Java developer today!</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xk4_1vDrzzo" frameborder="0" allowfullscreen></iframe>
+
+        </div>
+        <a class="enroll-button" href="#">Click on Video</a>
+    </div>
+    <div class="course-section">
+        <div class="course-video">
+            <h2 class="course-title">Introduction to competitive programming C</h2>
+            <p class="course-description">In this course, you will learn the fundamentals of C programming, including basic, syntax, method etc. Get started on your journey to becoming a competitive programmer today!</p>
+            <iframe src="https://www.youtube.com/embed/irqbmMNs2Bo" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <a class="enroll-button" href="#">Click on Video</a>
+    </div>
+     
+    <div class="course-section">
+        <div class="course-video">
+            <h2 class="course-title">Introduction to python programming</h2>
+            <p class="course-description">In this course, you will learn the fundamentals of python programming.  Get started on your journey to becoming a python programmer!</p>
+            <iframe src="https://www.youtube.com/embed/rfscVS0vtbw" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <a class="enroll-button" href="#">Click on Video</a>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="icon" href="websitelogo.png" type="image/png">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2; 
+}
+
+.header {
+           background-color: #5ac4ed; 
+           color: #fff;
+           padding: 15px 30px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           position: fixed;
+           width: 100%;
+           top: 0;
+           z-index: 1000;
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       }
+
+       .header .logo {
+           display: flex;
+           align-items: center;
+       }
+
+       .header .logo img {
+           width: 50px;
+           height: 50px;
+           margin-right: 15px;
+           border-radius: 50%;
+       }
+
+       .header h1 {
+           margin: 0;
+           font-size: 24px;
+           color: #fff;
+       }
+
+       .navigation {
+           display: flex;
+           align-items: center;
+       }
+
+       .header .nav {
+           list-style: none;
+           margin: 0;
+           padding: 0;
+           display: flex;
+       }
+
+       .header .nav li {
+           margin-left: 20px;
+       }
+
+       .header .nav a {
+           color: #fff;
+           font-weight: bold;
+           text-decoration: none;
+           padding: 10px 15px;
+           border-radius: 20px;
+           transition: background-color 0.3s;
+           background-color: #5ac4ed; /* Green */
+       }
+
+       .header .nav a:hover {
+           background-color: #fff; 
+           color: black;
+       }
+       .logo{
+        width: 30%;
+       }
+       .opt{
+        width: 50%;
+       }
+
+.search-container {
+  margin: 80px auto 20px; /* Adjusted margin for spacing */
+  text-align: center;
+  padding-top: 2%;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #5ac4ed; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.search-container button:hover {
+  background-color: #16ace8; /* Darker green on hover */
+}
+
+.book {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+  width: 100px;
+  height: 150px;
+  margin-right: 15px;
+}
+
+.book-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.book-description {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.book-actions a {
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.book-actions a:hover {
+  background-color: #f2f2f2;
+  color: #555;
+}
+
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+        <img src="websitelogo.png" alt="Online Education Logo">
+        <h1>Online Education</h1>
+    </div>
+    <div class="opt">
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login_form.php">Menu</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+                <li><a href="courses.html">Courses</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search by book name..." onkeyup="searchBooks()">
+    <button onclick="searchBooks()">Search</button>
+  </div>
+
+  <div class="book">
+    <img src="book/osomapto.png" alt="Book 1">
+    <div>
+      <div class="book-title">oshomapto_attojiboni</div>
+      <div class="book-description">It is a biography</div>
+      <div class="book-actions">
+        <a href="book/oshomapto_attojiboni.pdf" target="_blank">Read</a>
+        <a href="book/oshomapto_attojiboni.pdf" download>Download</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="book">
+    <img src="book/gontobbo.png" alt="Book 2">
+    <div>
+      <div class="book-title">Gantabya By Samaresh Basu</div>
+      <div class="book-description">Gantabya is a Fictional book.</div>
+      <div class="book-actions">
+        <a href="book/Gantabya By Samaresh Basu (BDeBooks.Com).pdf" target="_blank">Read</a>
+        <a href="book/Gantabya By Samaresh Basu (BDeBooks.Com).pdf" download>Download</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="book">
+    <img src="book/golposolpo.png" alt="Book 3">
+    <div>
+      <div class="book-title">Golpo Sholpo By Rabindranath Tagore</div>
+      <div class="book-description">Collection of the most renowned poets.</div>
+      <div class="book-actions">
+        <a href="book/Golpo Sholpo By Rabindranath Tagore (BDeBooks.Com).pdf" target="_blank">Read</a>
+        <a href="book/Golpo Sholpo By Rabindranath Tagore (BDeBooks.Com).pdf" download>Download</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="book">
+    <img src="book/peradox1.png" alt="Book 4">
+    <div>
+      <div class="book-title">Paradoxical Sajid</div>
+      <div class="book-description">The book about philosophical paradoxes.</div>
+      <div class="book-actions">
+        <a href="book/Paradoxical Sajid (BDeBook.Com).pdf" target="_blank">Read</a>
+        <a href="book/Paradoxical Sajid (BDeBook.Com).pdf" download>Download</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="book">
+    <img src="book/peradox1.png" alt="Book 5">
+    <div>
+      <div class="book-title">Paradoxical Sajid -02</div>
+      <div class="book-description">The book about philosophical paradoxes.</div>
+      <div class="book-actions">
+        <a href="book/Paradoxical Sajid (BDeBook.Com).pdf" target="_blank">Read</a>
+        <a href="book/Paradoxical Sajid (BDeBook.Com).pdf" download>Download</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function searchBooks() {
+      var input, filter, books, book, title;
+      input = document.getElementById("searchInput");
+      filter = input.value.toUpperCase();
+      books = document.getElementsByClassName("book");
+
+      for (var i = 0; i < books.length; i++) {
+        book = books[i];
+        title = book.getElementsByClassName("book-title")[0];
+
+        if (title.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          book.style.display = "";
+        } else {
+          book.style.display = "none";
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
